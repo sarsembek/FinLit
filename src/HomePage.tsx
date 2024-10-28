@@ -4,7 +4,7 @@ import { CTASection } from "./components/cta/CTASection";
 import { FAQ } from "./components/faq/FAQ";
 import { Features } from "./components/features/Features";
 import { Footer } from "./components/footer/Footer";
-import VideoGallery from "./components/footer/VideoGallery";
+import VideoGallery from "./components/VideoGallery";
 import NavigationMenu from "./components/navbar/NavigationMenu";
 import { TestimonialSection } from "./components/testimonials/TestimonialSection";
 import { useNavigate } from "react-router-dom"; 
