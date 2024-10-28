@@ -45,8 +45,9 @@ export const FAQ: React.FC = () => {
 
   return (
     <section
+      id="faq"
       data-layername="faq"
-      className="flex flex-col items-center mt-32 max-w-full w-[1020px] max-md:mt-10"
+      className="flex flex-col items-center mt-32 max-w-full w-[1020px] max-md:mt-10 px-12"
     >
       <h2 data-layername="faQs" className="text-4xl font-bold text-white">
         FAQs

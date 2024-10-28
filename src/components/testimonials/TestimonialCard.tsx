@@ -9,7 +9,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   role,
 }) => {
   return (
-    <article className="flex flex-col grow shrink items-start px-6 py-12 bg-zinc-800 bg-opacity-20 min-w-[240px] rounded-[32px] w-[314px] max-md:px-5">
+    <article className="flex flex-col grow shrink items-start px-6 py-6 md:py-12 bg-zinc-800 bg-opacity-20 min-w-[240px] rounded-[32px] w-[314px] max-md:px-5">
       <div className="flex gap-2.5 items-center p-4 w-14 h-14 bg-gray-700 rounded-[56px]">
         <img
           loading="lazy"

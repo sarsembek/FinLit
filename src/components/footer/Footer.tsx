@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
             title="FinLit.AI"
             description="Discover financial literacy with FinLit.AI with interactive training, courses and tools for your financial success"
           />
-          <div className="flex flex-wrap gap-8 items-start my-auto text-base min-w-[240px] max-md:max-w-full">
+          <div className="flex gap-8 items-start my-auto text-base min-w-[240px] max-md:max-w-full">
             {footerSections.map((section, index) => (
               <FooterLinkSection
                 key={index}

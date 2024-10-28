@@ -4,7 +4,7 @@ import { UserStat } from "./UserStat";
 
 export const Banner: React.FC = () => {
   return (
-    <section className="flex flex-wrap gap-8 items-start mt-32 w-full max-md:mt-10 ml-48">
+    <section id="whyus" className="flex flex-wrap gap-8 items-start mt-32 w-full max-md:mt-10 md:ml-48 ml-12">
       <div className="flex relative flex-col grow shrink items-start min-w-[240px] w-[483px] max-md:max-w-full">
         <h1 className="z-0 self-stretch text-6xl font-bold tracking-tighter text-white leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
           Financial literacy educational platform

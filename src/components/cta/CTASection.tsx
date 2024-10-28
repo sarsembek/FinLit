@@ -42,7 +42,7 @@ export const CTASection: React.FC = () => {
               >
                 <h1
                   data-layername="easyWayToManageYourFinances"
-                  className="text-5xl font-bold tracking-tight text-white leading-[56px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]"
+                  className="text-5xl px-12 md:px-0 font-bold tracking-tight text-white leading-[56px] max-md:max-w-full max-md:text-4xl max-md:leading-[52px]"
                 >
                   Easy Way to manage your finances
                 </h1>

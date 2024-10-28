@@ -16,7 +16,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => {
   return (
-    <article className="flex gap-6 items-start min-w-[240px] w-[392px]">
+    <article className="flex gap-6 items-start w-[392px]">
       <div className="flex overflow-hidden gap-2.5 items-center p-4 w-16 h-16 bg-gray-700 rounded-3xl">
         <img
           loading="lazy"
