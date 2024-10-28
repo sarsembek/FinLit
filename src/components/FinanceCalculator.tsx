@@ -33,7 +33,7 @@ const FinanceCalculator = () => {
 
   return (
     <div
-      className="my-24 finance-calculator-container fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-6 sm:p-8 px-4 sm:px-12 rounded-lg shadow-lg flex flex-col sm:flex-row text-white w-full max-w-md sm:max-w-3xl"
+      className="mt-20 my-4 finance-calculator-container w-full max-w-[90%] sm:max-w-3xl p-4 sm:p-8 rounded-lg shadow-lg flex flex-col sm:flex-row text-white"
       style={{
         backdropFilter: 'blur(10px)',
         background: 'rgba(255, 255, 255, 0.1)',
@@ -42,7 +42,7 @@ const FinanceCalculator = () => {
     >
       {/* Left side - Inputs */}
       <div className="inputs w-full sm:w-1/2 pr-0 sm:pr-4 mb-4 sm:mb-0">
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-4">Finance Calculator</h2>
+        <h2 className="text-xl sm:text-3xl font-semibold mb-4">Finance Calculator</h2>
 
         <label className="block mb-2 font-medium">Select Currency:</label>
         <select
@@ -99,7 +99,7 @@ const FinanceCalculator = () => {
           border: '1px solid rgba(255, 255, 255, 0.2)',
         }}
       >
-        <h3 className="text-xl sm:text-2xl font-semibold">Results</h3>
+        <h3 className="text-lg sm:text-2xl font-semibold">Results</h3>
         <p className="mb-2">Interest Rate: 13%</p>
         <p className="mb-2">Deposit Amount: {formatCurrency(deposit)}</p>
         <p className="mb-2">Reward: {formatCurrency(calculateReward())}</p>
