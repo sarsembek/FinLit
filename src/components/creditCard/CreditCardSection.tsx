@@ -2,7 +2,7 @@ import * as React from "react";
 
 export const CreditCardSection: React.FC = () => {
   return (
-    <main id="process" className="flex flex-wrap gap-8 items-center w-full mt-32 md:px-32 px-12">
+    <main id="process" className="flex flex-wrap gap-8 items-center w-full pt-24 md:px-32 px-12">
       <section className="flex flex-col grow shrink self-stretch px-7 pb-5 my-auto rounded-none min-w-[240px] w-[483px] max-md:px-5 max-md:max-w-full">
         <img src="/cards.svg" alt="Credit Cards" />
       </section>

@@ -39,7 +39,7 @@ const testimonialData = [
 
 export const TestimonialSection: React.FC = () => {
   return (
-    <section id="reviews" className="flex flex-wrap gap-8 justify-center items-start px-12 mt-32 max-w-full w-[1240px] max-md:mt-10">
+    <section id="reviews" className="flex flex-wrap gap-8 justify-center items-start px-12 pt-24 max-w-full w-[1240px] max-md:mt-10">
       {testimonialData.map((testimonial, index) => (
         <TestimonialCard key={index} {...testimonial} />
       ))}

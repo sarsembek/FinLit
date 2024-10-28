@@ -53,7 +53,7 @@ export const Features: React.FC = () => {
   return (
     <section
       data-layername="features"
-      className="flex flex-col items-center mt-32 px-12 max-md:mt-10 max-md:mx-4 max-md:max-w-full"
+      className="flex flex-col items-center pt-24 px-12 max-md:mt-10 max-md:mx-4 max-md:max-w-full"
       id="courses"
     >
       <h2

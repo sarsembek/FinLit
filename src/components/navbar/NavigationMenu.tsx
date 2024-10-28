@@ -16,7 +16,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ label, href }) => (
 );
 
 const menuItems = [
-  { label: "Why Us", href: "#whyuss" },
+  { label: "Why Us", href: "#whyus" },
   { label: "Courses", href: "#courses" },
   { label: "Our Process", href: "#process" },
   { label: "Reviews", href: "#reviews" },
@@ -32,8 +32,8 @@ const NavigationMenu: React.FC = () => {
     document.body.style.overflow = isMobileMenuOpen ? "auto" : "hidden";
   };
 
-  const redirectToHome = () => {
-    navigate("/");
+  const showComingSoon = () => {
+    alert("Coming Soon");
   };
 
   React.useEffect(() => {
@@ -47,7 +47,7 @@ const NavigationMenu: React.FC = () => {
     <header className="flex px-8 flex-wrap gap-12 justify-between items-center max-w-full text-base font-bold text-white w-[1240px] relative z-50">
       {/* Logo with Redirect to Home */}
       <div
-        onClick={redirectToHome}
+        onClick={() => navigate("/")}
         className="flex gap-3 justify-center items-center self-stretch my-auto text-xl tracking-tight leading-tight whitespace-nowrap cursor-pointer"
       >
         <img
@@ -66,7 +66,7 @@ const NavigationMenu: React.FC = () => {
         ))}
       </nav>
 
-      {/* Hamburger Icon for Mobile */}
+      {/* Mobile Menu Toggle */}
       <button
         className="md:hidden p-2"
         onClick={toggleMobileMenu}
@@ -108,10 +108,18 @@ const NavigationMenu: React.FC = () => {
             <MenuItem key={index} label={item.label} href={item.href} />
           ))}
           <div className="flex items-start gap-4 mt-6">
-            <button className="self-stretch py-3 text-center transition-colors duration-200 ease-in-out text-green-600 hover:text-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2">
+            <button
+              onClick={showComingSoon}
+              className="self-stretch py-3 text-center transition-colors duration-200 ease-in-out text-green-600 opacity-50 cursor-not-allowed"
+              disabled
+            >
               Login
             </button>
-            <button className="self-stretch py-3 text-center transition-colors duration-200 ease-in-out text-green-600 hover:text-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2">
+            <button
+              onClick={showComingSoon}
+              className="self-stretch py-3 text-center transition-colors duration-200 ease-in-out text-green-600 opacity-50 cursor-not-allowed"
+              disabled
+            >
               Signup
             </button>
           </div>
@@ -121,14 +129,16 @@ const NavigationMenu: React.FC = () => {
       {/* Desktop Login and Signup Buttons */}
       <div className="hidden md:flex gap-6">
         <button
-          className="px-5 py-2 text-green-600 transition-colors duration-200 ease-in-out hover:text-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
-          tabIndex={0}
+          onClick={showComingSoon}
+          className="px-5 py-2 text-green-600 opacity-50 cursor-not-allowed"
+          disabled
         >
           Login
         </button>
         <button
-          className="px-5 py-2 text-green-600 border-2 border-green-600 rounded-3xl transition-colors duration-200 ease-in-out hover:bg-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
-          tabIndex={0}
+          onClick={showComingSoon}
+          className="px-5 py-2 text-green-600 border-2 border-green-600 rounded-3xl opacity-50 cursor-not-allowed"
+          disabled
         >
           Signup
         </button>

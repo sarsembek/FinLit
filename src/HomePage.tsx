@@ -4,9 +4,12 @@ import { CTASection } from "./components/cta/CTASection";
 import { FAQ } from "./components/faq/FAQ";
 import { Features } from "./components/features/Features";
 import { Footer } from "./components/footer/Footer";
-import NavigationMenu from "./components/NavigationMenu";
+import VideoGallery from "./components/footer/VideoGallery";
+import NavigationMenu from "./components/navbar/NavigationMenu";
 import { TestimonialSection } from "./components/testimonials/TestimonialSection";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
+import { WhyUs } from "./components/WhyUs";
+
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -30,9 +33,11 @@ const HomePage = () => {
       <div className="relative flex flex-col items-center w-full pt-8">
         <NavigationMenu />
         <Banner />
+        <WhyUs />
         <Features />
         <CreditCardSection />
         <TestimonialSection />
+        <VideoGallery />
         <FAQ />
         <CTASection />
         <Footer />
