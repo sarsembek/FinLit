@@ -27,7 +27,7 @@ const NavigationMenu: React.FC = () => {
       <div className="flex gap-3 justify-center items-center self-stretch my-auto text-xl tracking-tight leading-tight whitespace-nowrap">
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/9fef530e97fe4035b3ccf762ae2eae01/b9848872d89ddcb20c7b78d07c28f45c2c542649735934774886991a4a950d2b?apiKey=9fef530e97fe4035b3ccf762ae2eae01&"
+          src="/logo.svg"
           alt="FinLit.AI Logo"
           className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
         />
