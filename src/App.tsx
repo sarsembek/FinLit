@@ -1,14 +1,11 @@
 import './App.css'
-import { LogoSlider } from './components/LogoSlider/LogoSlider'
 import NavigationMenu from './components/NavigationMenu'
 import { Banner } from './components/banner/Banner'
-import { CreditCardDesigner } from './components/creditCard/CreditCardDesigner'
 import { CreditCardSection } from './components/creditCard/CreditCardSection'
 import { CTASection } from './components/cta/CTASection'
 import { FAQ } from './components/faq/FAQ'
 import { Features } from './components/features/Features'
 import { Footer } from './components/footer/Footer'
-import { StatsSection } from './components/stats/StatsSection'
 import { TestimonialSection } from './components/testimonials/TestimonialSection'
 
 function App() {
@@ -28,10 +25,10 @@ function App() {
       <div className="relative flex flex-col items-center w-full pt-8">
         <NavigationMenu />
         <Banner />
-        <StatsSection />
-        <LogoSlider />
+        {/* <StatsSection /> */}
+        {/* <LogoSlider /> */}
         <Features />
-        <CreditCardDesigner />
+        {/* <CreditCardDesigner /> */}
         <CreditCardSection />
         <TestimonialSection />
         <FAQ />

@@ -13,7 +13,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ label }) => (
   </button>
 );
 
-const menuItems = ["Why Us", "Services", "Our Process", "Payments", "FAQs"];
+const menuItems = ["Why Us", "Courses", "Our Process", "Payments", "FAQs"];
 
 const NavigationMenu: React.FC = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -62,21 +62,38 @@ const NavigationMenu: React.FC = () => {
           {menuItems.map((item, index) => (
             <MenuItem key={index} label={item} />
           ))}
-          <button
-            className="self-stretch my-4 transition-colors duration-200 ease-in-out hover:text-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 active:text-green-800"
-            tabIndex={0}
-          >
-            Contact
-          </button>
+          <div className="flex flex-col gap-4 mt-4">
+            <button
+              className="self-stretch py-2 text-center transition-colors duration-200 ease-in-out text-green-600 hover:text-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+              tabIndex={0}
+            >
+              Login
+            </button>
+            <button
+              className="self-stretch py-2 text-center transition-colors duration-200 ease-in-out text-green-600 hover:text-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+              tabIndex={0}
+            >
+              Signup
+            </button>
+          </div>
         </nav>
       )}
 
-      <button
-        className="gap-2.5 hidden md:flex self-stretch px-8 py-3 my-auto text-green-600 whitespace-nowrap border-2 border-green-600 border-solid rounded-[64px] transition-colors duration-200 ease-in-out hover:bg-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 active:bg-green-700 active:text-white"
-        tabIndex={0}
-      >
-        Contact
-      </button>
+      {/* Desktop Login and Signup Buttons */}
+      <div className="hidden md:flex gap-4">
+        <button
+          className="px-4 py-2 text-green-600 transition-colors duration-200 ease-in-out hover:text-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+          tabIndex={0}
+        >
+          Login
+        </button>
+        <button
+          className="px-4 py-2 text-green-600 border-2 border-green-600 rounded-3xl transition-colors duration-200 ease-in-out hover:bg-green-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+          tabIndex={0}
+        >
+          Signup
+        </button>
+      </div>
     </header>
   );
 };

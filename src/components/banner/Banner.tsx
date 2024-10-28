@@ -7,11 +7,11 @@ export const Banner: React.FC = () => {
     <section className="flex flex-wrap gap-8 items-start mt-32 w-full max-md:mt-10 ml-48">
       <div className="flex relative flex-col grow shrink items-start min-w-[240px] w-[483px] max-md:max-w-full">
         <h1 className="z-0 self-stretch text-6xl font-bold tracking-tighter text-white leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
-          Discover the Finance Journey with us
+          Financial literacy educational platform
         </h1>
         <p className="z-0 self-stretch mt-8 text-lg leading-6 text-zinc-400 max-md:max-w-full">
-          Discover the power of our secure and rewarding credit cards. Explore
-          our range of credit cards and take control of your finances today.
+        Discover financial literacy with FinLit.AI
+        Interactive training, courses and tools for your financial success
         </p>
         <ActionButton
           text="Get Started"

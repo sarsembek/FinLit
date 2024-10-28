@@ -1,44 +1,44 @@
 import * as React from "react";
 import { FAQItem } from "./FAQItem";
-import { FAQData } from "./types";
 
-const faqData: FAQData[] = [
+const faqData = [
   {
-    question: "What credit score do I need to apply for a credit card?",
+    question: "How to create a personal budget?",
     answer:
-      "The required credit score may vary depending on the specific credit card. Generally, a good to excellent credit score (typically 670 or above) increases your chances of approval for premium credit cards.",
+      "List all your income and track your expenses for the month. Divide into fixed and variable expenses. Choose a method (e.g., 50/30/20 rule, zero-based budgeting). Identify short-term and long-term goals. Record your income and expenses using a spreadsheet or app. Review monthly and adjust as needed. Track your daily expenses and be disciplined. Evaluate spending patterns and make changes for the next month.",
   },
   {
-    question: "How can I apply for a credit card online?",
+    question: "How to control expenses?",
     answer:
-      "You can apply for a credit card online through the bank or financial institution's website. Simply fill out the online application form, providing your personal information, financial details, and any required documentation.",
+      "Start by categorizing your spending to understand where your money goes. Set limits for non-essential categories, and avoid impulsive purchases by following a budget. Consider using budgeting tools or apps to track expenses and receive alerts when you're close to exceeding limits.",
   },
   {
-    question: "Are there any annual fees associated with the credit card?",
+    question: "What is a financial safety net and how to create it?",
     answer:
-      "Some credit cards may charge an annual fee, while others offer no annual fee options. Be sure to read the terms and conditions of the card to understand any fees that may apply.",
+      "A financial safety net is a reserve of funds set aside for emergencies, such as unexpected medical bills or job loss. Build it by setting aside a portion of your income each month, aiming for 3-6 months' worth of living expenses. Keep this money in an easily accessible account, like a savings account.",
   },
   {
-    question: "How long does it take to receive the credit card once approved?",
+    question: "What types of investments are there and how to choose the right ones?",
     answer:
-      "Once your application is approved, it typically takes 5 to 10 business days for the credit card to arrive in the mail. Some issuers offer expedited shipping for an additional fee.",
+      "Common investment types include stocks, bonds, mutual funds, and real estate. Choosing the right ones depends on your risk tolerance, financial goals, and investment timeframe. Higher-risk investments like stocks may offer greater returns but require a longer time horizon, while bonds are typically safer but yield lower returns.",
   },
   {
-    question: "How can I check my credit card balance and transactions?",
+    question: "How to properly distribute income between savings, expenses, and investments?",
     answer:
-      "You can check your credit card balance and transactions by logging into your account on the issuer's website or mobile app. Most issuers also provide customer service numbers you can call for assistance.",
+      "A popular guideline is the 50/30/20 rule: allocate 50% of income for needs, 30% for wants, and 20% for savings and investments. Adjust this rule based on your financial goals. Prioritize building an emergency fund, then gradually increase investments as your savings grow.",
   },
   {
-    question: "What should I do if my credit card is lost or stolen?",
+    question: "How to plan for retirement savings?",
     answer:
-      "If your credit card is lost or stolen, immediately contact your card issuer to report it. They will help you freeze your account and issue a new card to prevent unauthorized charges.",
+      "Begin by estimating your retirement needs based on your current lifestyle. Contribute regularly to retirement accounts like a 401(k) or IRA if available. Take advantage of employer matches if applicable, and increase contributions as your income grows. Start early to benefit from compound growth.",
   },
   {
-    question: "Is my credit card information secure?",
+    question: "How to reduce debt?",
     answer:
-      "Yes, credit card companies use advanced security measures, such as encryption and fraud detection systems, to protect your information. However, it's essential to be cautious and monitor your account for any suspicious activity.",
+      "Focus on high-interest debts first to minimize overall interest costs. Use methods like the debt snowball (paying off smallest debts first) or debt avalanche (paying off highest interest debts first). Make consistent payments and avoid accruing new debt. Consider consolidating debt if it simplifies your payment process.",
   },
 ];
+
 
 export const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = React.useState<number>(-1); // Initialize with -1 to keep all closed
