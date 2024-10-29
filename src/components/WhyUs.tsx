@@ -6,7 +6,7 @@ export const WhyUs: React.FC = () => {
      >
        {/* Text Section */}
        <section className="flex flex-col grow text-left text-white w-full max-w-lg">
-         <h1 className="text-3xl md:text-4xl font-bold mb-4">
+         <h1 className="text-3xl md:text-5xl font-bold mb-4">
            Why Us?
          </h1>
          <p className="text-base md:text-md text-zinc-400 leading-relaxed">
